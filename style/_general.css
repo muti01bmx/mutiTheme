@@ -1,0 +1,11 @@
+:root{
+        --primary: #FFF1B8;
+        --secondary: #ECB704;
+        --accent: #403D39;
+        --white: #FFFFFF;
+        --black: #000000;
+
+        --width: 100%;
+        --padding: 24px;
+        --border-radius: 10px;
+}

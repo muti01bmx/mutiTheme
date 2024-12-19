@@ -1,0 +1,147 @@
+@import url(./_font.css);
+@import url(./_general.css);
+
+*{
+        padding: 0;
+        margin: 0;
+        user-select: none;
+        box-sizing: border-box;
+}
+#header{
+        width: 100%;
+        height: 131px;
+        display: flex;
+        justify-content: center;
+}
+.header_container{
+        width: var(--width);
+        height: 100%;
+        background-color: var(--primary);
+        padding: var(--padding);
+}
+.header_container .container_main{
+        width: var(--width);
+        height: 100%;
+        background-color: var(--white);
+        border-radius: var(--border-radius);
+        border: 1px solid var(--accent);
+}
+.header_container .container_main .main_nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+}
+.header_container .container_main .main_nav .nav_right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 15%;
+        height: 100%;
+        padding: 1rem;
+}
+.header_container .container_main .main_nav .nav_right img{
+        width: 128px;
+        height: 100%;
+}
+.header_container .container_main .main_nav .nav_right hr{
+        width: 80px;
+        transform: rotate(90deg);
+        border-radius: var(--border-radius);
+        height: 1px;
+        background-color: var(--accent);
+}
+.header_container .container_main .main_nav .nav_menu{
+        width: 60%;
+        height: 100%;
+}
+.header_container .container_main .main_nav .nav_menu ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+}
+.header_container .container_main .main_nav .nav_menu ul li{
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+}
+.header_container .container_main .main_nav .nav_menu ul li:hover a{
+        color: var(--secondary);
+}
+.header_container .container_main .main_nav .nav_menu ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        color: var(--accent);
+        font-family: "VazirR";
+
+}
+.header_container .container_main .main_nav .nav_left{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+}
+.header_container .container_main .main_nav .nav_left #button_cart{
+        width: 48px;
+        height: 48px;
+        position: relative;
+        border: 1px solid var(--accent);
+        background-color: var(--white);
+        border-radius: 32px 4px 32px 32px;
+        cursor: pointer;
+}
+.header_container .container_main .main_nav .nav_left #button_cart::after{
+        content: "";
+        width: 20px;
+        position: absolute;
+        right: -10px;
+        top: 4px;
+        height: 20px;
+        background-color: var(--secondary);
+        border-radius: 100px;
+}
+.header_container .container_main .main_nav .nav_left #button_cart svg{
+        width: 25px;
+        height: 25px;
+}
+.header_container .container_main .main_nav .nav_left #button_user{
+        width: 172px;
+        height: 48px;
+        background-color: var(--accent);
+        font-family: "VazirR";
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border: navajowhite;
+        cursor: pointer;
+        color: var(--white);
+        border-radius: 32px 4px 32px 32px;
+        transition: 0.3s ease;
+        font-size: 16px;
+}
+.header_container .container_main .main_nav .nav_left #button_user:hover{
+        color: var(--accent);
+        background-color: var(--secondary);
+}
+.header_container .container_main .main_nav .nav_left #button_user svg{
+        fill: var(--white);
+        transition: 0.3s ease;
+}
+.header_container .container_main .main_nav .nav_left #button_user:hover svg{
+        fill: var(--accent);
+}
